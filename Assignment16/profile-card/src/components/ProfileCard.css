@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.profile-card {
+  width: 100%;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.profile-image {
+  position: relative;
+  height: 180px;
+  background: linear-gradient(45deg, #2193b0, #6dd5ed);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.profile-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 5px solid rgba(255, 255, 255, 0.9);
+  object-fit: cover;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.profile-card:hover .profile-img {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.profile-info {
+  padding: 25px 20px;
+  text-align: center;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-name {
+  color: #2c3e50;
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.profile-title {
+  color: #2193b0;
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.profile-email {
+  color: #7f8c8d;
+  font-size: 0.85rem;
+  margin-bottom: 10px;
+  word-break: break-word;
+}
+
+.profile-address {
+  color: #7f8c8d;
+  font-size: 0.85rem;
+  margin-bottom: 15px;
+  font-style: italic;
+}
+
+.profile-stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px 0;
+  padding: 15px 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 5px;
+}
+
+.stat-value {
+  color: #2193b0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 3px;
+}
+
+.stat-label {
+  color: #95a5a6;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 500;
+}
+
+.profile-contact {
+  margin: 10px 0;
+  text-align: left;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.profile-contact p {
+  margin: 8px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.profile-contact i {
+  width: 20px;
+  color: #2193b0;
+}
+
+.profile-contact a {
+  color: #3498db;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.profile-contact a:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
+
+.profile-social {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 15px 0 20px;
+}
+
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #f5f5f5;
+  color: #555;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  background: #2193b0;
+  color: #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(33, 147, 176, 0.3);
+}
+
+.contact-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 25px;
+  background: linear-gradient(45deg, #2193b0, #6dd5ed);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-top: auto;
+  width: 90%;
+  margin: 15px auto 0;
+  box-shadow: 0 4px 10px rgba(33, 147, 176, 0.2);
+}
+
+.contact-btn i {
+  margin-right: 8px;
+  font-size: 0.9rem;
+}
+
+.contact-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(33, 147, 176, 0.3);
+  background: linear-gradient(45deg, #1e82a8, #5ec5e0);
+}
+
+.contact-btn:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 5px rgba(33, 147, 176, 0.3);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .profile-card {
+    max-width: 100%;
+  }
+  
+  .profile-image {
+    height: 160px;
+  }
+  
+  .profile-img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .profile-name {
+    font-size: 1.2rem;
+  }
+  
+  .profile-title {
+    font-size: 0.9rem;
+  }
+  
+  .profile-contact p {
+    font-size: 0.8rem;
+  }
+  
+  .contact-btn {
+    padding: 8px 20px;
+    font-size: 0.8rem;
+  }
+}
